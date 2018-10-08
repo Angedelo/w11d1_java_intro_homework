@@ -13,4 +13,16 @@ public class WaterBottle {
         this.volume =  this.volume - 10;
         return this.volume;
     }
+
+    public int empty(){
+        this.volume = 0;
+        return this.volume;
+    }
+
+    public int refill(){
+        if (this.volume < 100){
+            this.volume = 100;
+        }
+        return this.volume;
+    }
 }
