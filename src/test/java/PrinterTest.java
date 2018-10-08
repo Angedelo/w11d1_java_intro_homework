@@ -18,7 +18,7 @@ public class PrinterTest {
     @Test
     public void canPrintIfSufficientSheets(){
         assertEquals(80, printer.print(2,10));
-        assertEquals(9, printer.getToner());
+        assertEquals(0, printer.getToner());
     }
 
     @Test

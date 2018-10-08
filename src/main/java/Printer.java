@@ -14,7 +14,7 @@ public class Printer {
     public int print(int copies, int pages){
         if (this.sheets >= (copies * pages)){
             this.sheets = (this.sheets - (copies * pages));
-            this.toner = this.toner - 1;
+            this.toner = this.toner - pages;
             return this.sheets;
         }
         return this.sheets;
